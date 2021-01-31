@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-
-
+import AddIcon from '@material-ui/icons/AddCircle';
+import Fab from '@material-ui/core/Fab';
 function CreateArea(props) {
 
  const [note,setNote] =useState({
@@ -45,7 +45,7 @@ function CreateArea(props) {
          value={note.content} 
          rows="3" 
          />
-        <button onClick={addnew}>Add</button>
+        <Fab onClick={addnew}><AddIcon/></Fab>
       </form>
     </div>
   );
